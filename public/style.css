@@ -1,0 +1,73 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1,
+h2,
+p {
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  font-size: large;
+  width: 5vw;
+}
+
+canvas {
+  border: 2px solid blueviolet;
+  width: 40vw;
+  background-color: azure;
+  /* margin: 0; */
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  background-color: aliceblue;
+}
+
+#canvasWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  background-color: antiquewhite;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5vw;
+}
+
+#controlsWrapper {
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#controlsWrapper label {
+  margin-left: 3vw;
+}
+
+#weightsInputsWrapper input {
+  /* width: 4vw; */
+}
+
+#adjustmentsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#adjustmentsWrapper input {
+  width: 7vw;
+  text-align: center;
+}
+
+#adjustmentsWrapper label {
+  margin-top: 2vw;
+}
+
+#trainAndTestButton {
+  width: 20vw;
+  height: 5vw;
+  margin: 5vw;
+}

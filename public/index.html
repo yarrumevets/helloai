@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>helloai</title>
+  </head>
+  <body>
+    <h1>HelloAI - Quadratic Function</h1>
+    <p>
+      This is simple <strong>ai</strong> app using basic
+      <strong>machine learning</strong> principles to predict patterns and
+      refine its accuracy over time.
+    </p>
+    <main>
+      <div id="canvasWrapper">
+        <h2 id="canvasHeader">Graph</h2>
+        <canvas id="graph" width="600" height="600"></canvas>
+      </div>
+      <div id="controlsWrapper">
+        <h3>Weights &amp; Bias</h3>
+        <div id="weightsInputsWrapper">
+          <label for="aWeight">a</label>
+          <input id="aWeight" type="number" value="0.01" step="0.005" />
+          <label for="bWeight">b</label>
+          <input id="bWeight" type="number" value="0.1" step="0.05" />
+          <label for="cBias">c</label>
+          <input id="cBias" type="number" value="1" step="0.5" />
+          <p>
+            y = <span id="formA">a</span>x<sup>2</sup> +
+            <span id="formB">b</span>x + <span id="formC">c</span>
+          </p>
+        </div>
+        <h3>Adjustments</h3>
+        <div id="adjustmentsWrapper">
+          <label for="epochs">Epochs</label>
+          <input id="epochs" type="number" value="24000" step="1000" min="1" />
+          <label for="totalSampleData">Amount of sample data</label>
+          <input
+            id="totalSampleData"
+            type="number"
+            value="9"
+            step="1"
+            min="1"
+          />
+        </div>
+
+        <button id="trainAndTestButton">Train &amp; Test</button>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
