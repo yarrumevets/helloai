@@ -132,7 +132,7 @@ const hello1 = () => {
     return y;
   }
 
-  console.log("The correct answer is: y = 2x + 0");
+  console.log("The correct answer is: y = 2x + 1");
   train(data, 200);
   console.log(predict(4)); // Should be ≈9.0
   console.log(predict(411)); // Should be ≈9.0
